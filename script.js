@@ -55,73 +55,7 @@ function handleButtonClick(event) {
     } else if (content === "deg" || content === "rad") {
         return
     } else if (content === '<svg xmlns="http://www.w3.org/2000/svg" width="2.2vw" height="2.2vw" viewBox="0 0 16 16"><path fill="white" fill-rule="evenodd" d="M13.5 11a.75.75 0 0 0 0-1.5h-11a.75.75 0 0 0 0 1.5zm0-4.5a.75.75 0 0 0 0-1.5h-11a.75.75 0 0 0 0 1.5z" clip-rule="evenodd"></path></svg>') {
-        // var mainarr = document.getElementById('topequtnclans').innerHTML;
-        // const equtnarc = document.getElementById('topequtnclans').innerHTML
-        // console.log(mainarr)
-        // function factorial(n) {
-        //     if (n === 0) return 1;
-        //     let result = 1;
-        //     for (let i = 1; i <= n; i++) {
-        //         result *= i;
-        //     }
-        //     return result;
-        // }
-
-        // // Define the summation function
-        // function summation(n) {
-        //     let sum = 0;
-        //     for (let i = 1; i <= n; i++) {
-        //         sum += i;
-        //     }
-        //     return sum;
-        // }
-
-        // if (mainarr.includes('<svg style="margin-left: -5px;margin-right: -5px;" xmlns="http://www.w3.org/2000/svg" width="12vh" height="85%" viewBox="0 0 256 256"><path fill="white" d="M184 72V56H80.65l53.6 67a8 8 0 0 1 0 10l-53.6 67H184v-16a8 8 0 0 1 16 0v24a8 8 0 0 1-8 8H64a8 8 0 0 1-6.25-13l60-75l-60-75A8 8 0 0 1 64 40h128a8 8 0 0 1 8 8v24a8 8 0 0 1-16 0"></path></svg>')) {
-        //     mainarr = mainarr.replace('<svg style="margin-left: -5px;margin-right: -5px;" xmlns="http://www.w3.org/2000/svg" width="12vh" height="85%" viewBox="0 0 256 256"><path fill="white" d="M184 72V56H80.65l53.6 67a8 8 0 0 1 0 10l-53.6 67H184v-16a8 8 0 0 1 16 0v24a8 8 0 0 1-8 8H64a8 8 0 0 1-6.25-13l60-75l-60-75A8 8 0 0 1 64 40h128a8 8 0 0 1 8 8v24a8 8 0 0 1-16 0"></path></svg>', 'Σ');
-        // }
-        // mainarr = mainarr.replace(/<span style="font-size: 6vh;">2<\/span>/g, '**2');
-        // mainarr = mainarr.replace(/<span style="font-size: 6vh;">3<\/span>/g, '**3');
-        // mainarr = mainarr.replace(/×/g, '*');
-        // mainarr = mainarr.replace(/÷/g, '/');
-        // mainarr = mainarr.replace(/\^/g, '**');
-
-        // // Function to replace factorials and summations in the expression
-        // function parseExpression(expression) {
-        //     // Replace factorials with the factorial function call
-        //     expression = expression.replace(/(\d+)!/g, (match, p1) => `factorial(${p1})`);
-
-        //     // Replace summation Σ with the summation function call
-        //     expression = expression.replace(/Σ(\d+)/g, (match, p1) => `summation(${p1})`);
-
-        //     expression = expression.replace(/sin\(([^)]+)\)/g, (match, p1) => `Math.sin(${p1})`);
-        //     expression = expression.replace(/cos\(([^)]+)\)/g, (match, p1) => `Math.cos(${p1})`);
-        //     expression = expression.replace(/tan\(([^)]+)\)/g, (match, p1) => `Math.tan(${p1})`);
-        //     expression = expression.replace(/sinh\(([^)]+)\)/g, (match, p1) => `Math.sinh(${p1})`);
-        //     expression = expression.replace(/cosh\(([^)]+)\)/g, (match, p1) => `Math.cosh(${p1})`);
-        //     expression = expression.replace(/tanh\(([^)]+)\)/g, (match, p1) => `Math.tanh(${p1})`);
-        //     expression = expression.replace(/ln\(([^)]+)\)/g, (match, p1) => `Math.log(${p1})`)
-        //     expression = expression.replace(/log\(([^)]+)\)/g, (match, p1) => `Math.log10(${p1})`);
-
-
-        //     return expression;
-        // }
-
-        // let parsedInput = parseExpression(mainarr);
-        // var result
-        // try {
-
-        //     result = eval(parsedInput);
-        // } catch (error) {
-        //     result = 'Error'
-
-        // }
-        // document.getElementById('topequtnclclt').innerHTML = equtnarc
-        // document.getElementById('topequtnclans').innerHTML = result
-
-
-        // return
-
-
+        
         var mainarr = document.getElementById('topequtnclans').innerHTML;
         var equtnarc = document.getElementById('topequtnclans').innerHTML;
         console.log(mainarr);
