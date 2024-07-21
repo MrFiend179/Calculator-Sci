@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citadel - Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./script.js"></script>
+    <script defer src="./gradesys.js"></script>
+    <script defer src="./mainassesbtn.js"></script>
+    <link rel="shortcut icon" href="./assets/citadellgo-removebg-preview.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="mainbody">
+
+        <div id="lftbrmain">
+            <div id="tplgomn"></div>
+            <div id="mainbtn1">
+                <div id="btnicnmain">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45px" height="45px" viewBox="0 0 24 24">
+                        <path fill="white"
+                            d="M8 18h1.5v-2h2v-1.5h-2v-2H8v2H6V16h2zm5-.75h5v-1.5h-5zm0-2.5h5v-1.5h-5zm1.1-3.8l1.4-1.4l1.4 1.4l1.05-1.05l-1.4-1.45l1.4-1.4L16.9 6l-1.4 1.4L14.1 6l-1.05 1.05l1.4 1.4l-1.4 1.45zM6.25 9.2h5V7.7h-5zM5 21q-.825 0-1.413-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21z" />
+                    </svg>
+                </div>
+            </div>
+            <div id="mainbtn2">
+                <div id="btnicnmain1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45px" height="45px" viewBox="0 0 32 32">
+                        <path fill="white"
+                            d="M14 23h8v2h-8zm-4 0h2v2h-2zm4-5h8v2h-8zm-4 0h2v2h-2zm4-5h8v2h-8zm-4 0h2v2h-2z" />
+                        <path fill="white"
+                            d="M25 5h-3V4a2 2 0 0 0-2-2h-8a2 2 0 0 0-2 2v1H7a2 2 0 0 0-2 2v21a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2M12 4h8v4h-8Zm13 24H7V7h3v3h12V7h3Z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div id="spcrmnfrl">
+            <div id="mainimgadsabdas"></div>
+        </div>
+        <div id="calculator">
+            <div id="historycalc">
+                <div id="innerhist">
+                    <div id="topttlhstryinnr">History</div>
+                    <div id="mainhstrycntnts">
+                        <!-- <div id="hstryequtnsmain">
+                            <div id="topequtn">9*9/3</div>
+                            <div id="anstoeq">27</div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div id="maincalc">
+                <div id="maintxtbxara">
+                    <div id="topequtnclclt"></div>
+                    <div id="topequtnclans"></div>
+                </div>
+                <div id="mainvbtnsclcara">
+                    <div id="rows">
+                        <div id="columns1" class="color">(</div>
+                        <div id="columns2" class="color">)</div>
+                        <div id="columns3" class="color">x!</div>
+                        <div id="columns4" class="color"><svg xmlns="http://www.w3.org/2000/svg" width="2.5vw" height="2.5vw" viewBox="0 0 256 256"><path fill="white" d="M184 72V56H80.65l53.6 67a8 8 0 0 1 0 10l-53.6 67H184v-16a8 8 0 0 1 16 0v24a8 8 0 0 1-8 8H64a8 8 0 0 1-6.25-13l60-75l-60-75A8 8 0 0 1 64 40h128a8 8 0 0 1 8 8v24a8 8 0 0 1-16 0"/></svg></div>
+                        <div id="columns5" class="color">AC</div>
+                        <div id="columns6" class="color"><svg xmlns="http://www.w3.org/2000/svg" width="2.5vw" height="2.5vw" viewBox="0 0 24 21"><path fill="white" d="M11 7.998H8v3a1 1 0 0 1-2 0v-3H3a1 1 0 1 1 0-2h3v-3a1 1 0 1 1 2 0v3h3a1 1 0 0 1 0 2m10 10h-6a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2M17.793 4.707L4.707 17.793a1 1 0 0 0 0 1.414l.086.086a1 1 0 0 0 1.414 0L19.293 6.207a1 1 0 0 0 0-1.414l-.086-.086a1 1 0 0 0-1.414 0"/></svg></div>
+                        <div id="columns7" class="color"><svg xmlns="http://www.w3.org/2000/svg" width="2.5vw" height="2.5vw" viewBox="0 0 24 24"><path fill="white" d="M7.758 10.758a3 3 0 1 0-3-3a3.003 3.003 0 0 0 3 3m0-4a1 1 0 1 1-1 1a1 1 0 0 1 1-1m8.484 6.484a3 3 0 1 0 3 3a3.003 3.003 0 0 0-3-3m0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1m3.465-12.949a1 1 0 0 0-1.414 0l-14 14a1 1 0 1 0 1.414 1.414l14-14a1 1 0 0 0 0-1.414"/></svg></div>
+                        <div id="columns8" class="color"><svg xmlns="http://www.w3.org/2000/svg" width="2.5vw" height="2.5vw" viewBox="0 0 24 24"><path fill="white" d="M6 11h12a1 1 0 0 1 0 2H6a1 1 0 0 1 0-2m6.002-7a2 2 0 1 0-.004 4a2 2 0 0 0 .004-4m0 12a2 2 0 1 0-.004 4a2 2 0 0 0 .004-4"/></svg></div>
+                    </div>
+                    <div id="rows">
+                        <div id="columns9" class="color"><p>X<sup>2</sup></p></div>
+                        <div id="columns10" class="color"><p>X<sup>3</sup></p></div>
+                        <div id="columns11" class="color"><p>X<sup>y</sup></p></div>
+                        <div id="columns12" class="color">ln</div>
+                        <div id="columns13" class="color">7</div>
+                        <div id="columns14" class="color">8</div>
+                        <div id="columns15"  class="color">9</div>
+                        <div id="columns16" class="color"><svg xmlns="http://www.w3.org/2000/svg" width="2.5vw" height="2.5vw" viewBox="0 0 23 22"><path fill="white" d="M7 18a1 1 0 0 1-.707-1.707l10-10a1 1 0 0 1 1.414 1.414l-10 10A.997.997 0 0 1 7 18"/><path fill="white" d="M17 18a.997.997 0 0 1-.707-.293l-10-10a1 1 0 0 1 1.414-1.414l10 10A1 1 0 0 1 17 18"/></svg></div>
+                    </div>
+                    <div id="rows">
+                        <div id="columns17" class="color">sin</div>
+                        <div id="columns18" class="color">cos</div>
+                        <div id="columns19" class="color">tan</div>
+                        <div id="columns20" class="color">log10</div>
+                        <div id="columns21" class="color">4</div>
+                        <div id="columns22" class="color">5</div>
+                        <div id="columns23" class="color">6</div>
+                        <div id="columns24" class="color"><svg xmlns="http://www.w3.org/2000/svg" width="2.5vw" height="2.5vw" viewBox="0 0 16 16"><path fill="white" d="M3 8a.75.75 0 0 1 .75-.75h8.5a.75.75 0 0 1 0 1.5h-8.5A.75.75 0 0 1 3 8"/></svg></div>
+                    </div>
+                    <div id="rows">
+                        <div id="columns25" class="color">sinh</div>
+                        <div id="columns26" class="color">cosh</div>
+                        <div id="columns27" class="color">tanh</div>
+                        <div id="columns28" class="color">log2</div>
+                        <div id="columns29" class="color">1</div>
+                        <div id="columns30" class="color">2</div>
+                        <div id="columns31" class="color">3</div>
+                        <div id="columns32" class="color"><svg xmlns="http://www.w3.org/2000/svg" width="2.1vw" height="2.1vw" viewBox="0 0 15 15"><path fill="white" d="M8.5 2.75a.75.75 0 0 0-1.5 0V7H2.75a.75.75 0 0 0 0 1.5H7v4.25a.75.75 0 0 0 1.5 0V8.5h4.25a.75.75 0 0 0 0-1.5H8.5z"/></svg></div>
+                    </div>
+                    <div id="rows">
+                        <div id="columns33" class="color">deg</div>
+                        <div id="columns34" class="color"><svg xmlns="http://www.w3.org/2000/svg" width="2.2vw" height="2.2vw" viewBox="0 0 32 32"><path fill="white" d="m19.313 6l-.25.656l-6.157 16.063l-3-6.157L9.625 16H6v2h2.375L12 25.438l.281.562h1.5l.25-.656L20.687 8H26V6z"/></svg></div>
+                        <div id="columns35" class="color"><svg xmlns="http://www.w3.org/2000/svg" width="50%" height="50%" viewBox="0 0 16 16"><path fill="white" d="M4 4.085V10.5a2.5 2.5 0 0 0 2.336 2.495L6.5 13h4.414A1.5 1.5 0 0 1 9.5 14H6a3 3 0 0 1-3-3V5.5a1.5 1.5 0 0 1 1-1.415M11.5 2A1.5 1.5 0 0 1 13 3.5v7a1.5 1.5 0 0 1-1.5 1.5h-5A1.5 1.5 0 0 1 5 10.5v-7A1.5 1.5 0 0 1 6.5 2z"/></svg></div>
+                        <div id="columns36" class="color"><svg xmlns="http://www.w3.org/2000/svg" width="2.2vw" height="2.2vw" viewBox="0 0 24 24"><path fill="white" d="M2 7a3 3 0 0 1 3-3h15.25a1 1 0 1 1 0 2H17v10.703a1.5 1.5 0 0 0 2.005 1.412l.159-.057a1 1 0 1 1 .672 1.884l-.159.057c-2.28.814-4.677-.876-4.677-3.296V6H9.979a68 68 0 0 1-.36 4.21c-.316 2.683-.89 6.142-1.924 9.118a1 1 0 1 1-1.89-.656c.965-2.774 1.518-6.065 1.827-8.695A66 66 0 0 0 7.976 6H5a1 1 0 0 0-1 1v.5a1 1 0 0 1-2 0z"/></svg></div>
+                        <div id="columns37" class="color">Rand</div>
+                        <div id="columns38" class="color">0</div>
+                        <div id="columns39" class="color">.</div>
+                        <div id="columns40" class="color"><svg xmlns="http://www.w3.org/2000/svg" width="2.2vw" height="2.2vw" viewBox="0 0 16 16"><path fill="white" fill-rule="evenodd" d="M13.5 11a.75.75 0 0 0 0-1.5h-11a.75.75 0 0 0 0 1.5zm0-4.5a.75.75 0 0 0 0-1.5h-11a.75.75 0 0 0 0 1.5z" clip-rule="evenodd"/></svg></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <div id="gradesystm">
+            <div id="ttlgrd">Marks Sheet</div>
+            <div id="maingrds">
+                <div id="lftsdmnmrks">
+                    <div id="no1">
+                        <div id="mainnoofdv">1</div>
+                        <div id="sibjnmttl">
+                            <div id="ttlmrksmn1">Subject</div>
+                            <input type="text" id="subjctttl1" class="style">
+                        </div>
+                        <div id="sibjnmttl">
+                            <div id="ttlmrksmn2">Obtained Marks</div>
+                            <input type="text" id="subjcobtnmrks1" class="style">
+                        </div>
+                    </div>
+                    <div id="adfldid">
+                        <div id="mainactbtnadder">+ Add More</div>
+                        <div id="mainactbtnadder2">- Remove</div>
+                    </div>
+                </div>
+                <div id="rgtsdmnmrks">
+                    <div id="ttlmrksoptn">
+                        <div id="totalttlmngrd">Total</div>
+                        <div id="maininptttlgrdbg">
+                            <input type="text" id="ttltxtgrds">
+                        </div>
+                    </div>
+                    <div id="ttlmrksoptn">
+                        <div id="totalttlmngrd">Grade</div>
+                        <div id="maininptttlgrdbg">
+                            <div id="nolbl">NO</div>
+                            <label class="switch">
+                                <input type="checkbox" id="grade">
+                                <span class="slider"></span>
+                            </label>
+                            <div id="nolbl">YES</div>
+                        </div>
+                    </div>
+                    <div id="ttlmrksoptn">
+                        <div id="totalttlmngrd">GPA</div>
+                        <div id="maininptttlgrdbg">
+                            <div id="nolbl">NO</div>
+                            <label class="switch">
+                                <input type="checkbox" id="gpa">
+                                <span class="slider"></span>
+                            </label>
+                            <div id="nolbl">YES</div>
+                        </div>
+                    </div>
+                    <div id="ttlmrksoptnclc">
+                        <div id="mainactbtnadder23">Calculate</div>
+                    </div>
+                </div>
+            </div>
+            <div id="maintblfrgrade">
+                <div id="miantblfrgrds">Marks Sheet</div>
+                <div id="miantblfrgrds1">
+                    <div id="subj1">Subject</div>
+                    <div id="objct1">Obtained Marks</div>
+                    <div id="ttlmrks1">Total Marks</div>
+                    <div id="grd1">Grade</div>
+                    <div id="gpsa1">GPA</div>
+                </div>
+                
+            </div>
+        </div>
+   
+    </div>
+</body>
+
+</html>
